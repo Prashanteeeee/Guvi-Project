@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricart - Fresh from Farmers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Agricart</h1>
+        </div>
+        <div class="header-right">
+            <input type="text" placeholder="Search for fresh produce" id="search-bar">
+            <button onclick="searchProducts()">Search</button>
+            <a href="login.html">Login</a>
+            <a href="cart.html" id="cart-icon">My Cart</a>
+        </div>
+    </header>
+
+    <!-- Main Categories Section -->
+    <section class="categories">
+        <div class="category">
+            <h2>Seasonal Produce</h2>
+            <p>Get the freshest fruits and vegetables of the season</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="category">
+            <h2>Organic Essentials</h2>
+            <p>Organic produce directly from trusted farmers</p>
+            <button>Order Now</button>
+        </div>
+        <div class="category">
+            <h2>Dairy and Eggs</h2>
+            <p>Fresh dairy and eggs delivered to your doorstep</p>
+            <button>Order Now</button>
+        </div>
+        <div class="category">
+            <h2>Groceries</h2>
+            <p>Healthy groceries for all your daily needs</p>
+            <button>Order Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Agricart. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricart Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Login to Agricart</h2>
+    <div class="login-container">
+        <form>
+            <label for="userType">User Type:</label>
+            <select id="userType" name="userType">
+                <option value="customer">Customer</option>
+                <option value="farmer">Farmer</option>
+            </select>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Agricart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Your Cart</h2>
+    <ul id="cartItems">
+        <!-- Cart items will be dynamically added here -->
+    </ul>
+    <p id="totalPrice">Total: $0.00</p>
+    <button onclick="checkout()">Proceed to Checkout</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
